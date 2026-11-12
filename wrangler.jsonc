@@ -1,0 +1,6 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "house-onde-vamos-morar",
+  "compatibility_date": "2026-11-12",
+  "assets": { "directory": "./dist", "not_found_handling": "404-page" }
+}
