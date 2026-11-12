@@ -42,6 +42,6 @@ Filtros: 2 ou 3 quartos e todos os bairros presentes na publicação. Pasin, Mom
 
 A configuração está pronta para Workers Static Assets e o plano Free, conforme os limites atuais do Cloudflare. Nenhum deploy foi feito nesta missão.
 
-Depois de revisar e integrar esta branch em `main`, conecte `NomosLudens/house` pelo painel Cloudflare Workers Builds. Configure a raiz do projeto, Node.js 22+, branch `main`, comando de build `npm ci && npm run check` e comando de deploy `npx wrangler deploy`. O Wrangler lê `wrangler.jsonc` e publica `dist/`. A autorização é concedida pelo fluxo GitHub do Cloudflare; não há token Cloudflare neste repositório. Não habilite deploy de produção ou previews de branches sem a autorização correspondente.
+Depois de revisar e integrar esta branch em `master`, conecte `NomosLudens/house` pelo painel Cloudflare Workers Builds. Configure a raiz do projeto, Node.js 22+, branch `master`, comando de build `npm ci && npm run check` e comando de deploy `npx wrangler deploy`. O Wrangler lê `wrangler.jsonc` e publica `dist/`. A autorização é concedida pelo fluxo GitHub do Cloudflare; não há token Cloudflare neste repositório. Não habilite deploy de produção ou previews de branches sem a autorização correspondente.
 
 Para validar a configuração sem publicar, use `npx wrangler deploy --dry-run`.
