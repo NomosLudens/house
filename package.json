@@ -1,0 +1,23 @@
+{
+  "name": "house-onde-vamos-morar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/model.test.js",
+    "dev": "wrangler dev",
+    "check": "npm test && npm run build",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "leaflet": "1.9.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "wrangler": "4.50.0"
+  }
+}
